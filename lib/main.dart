@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 
 void main() {
   runApp(MaterialApp(
+    debugShowCheckedModeBanner: false,
     title: 'Lol',
     home: MyApp(),
   ));
@@ -23,12 +24,11 @@ class MyApp extends StatelessWidget {
       ),
       body: Container(
         color: Colors.white,
-        alignment: Alignment(0, 0),
+        alignment: Alignment(0,0),
         child: Container(
           color: Colors.green[400],
-          child: Center(
             child: Text(
-              'Jayanth Sai kiran',
+              'Jayanth Saikiran',
               textDirection: TextDirection.ltr,
               style: TextStyle(
                 fontSize: 34,
@@ -36,12 +36,11 @@ class MyApp extends StatelessWidget {
                 color: Colors.white,
               ),
             ),
-          ),
           constraints: BoxConstraints(
-              maxHeight: 100.0,
-              maxWidth: 500.0,
-              minWidth: 300.0,
-              minHeight: 100.0),
+              maxHeight: 200.0,
+              maxWidth: 600.0,
+              minWidth: 20.0,
+              minHeight: 10.0),
         ),
       ),
     );
